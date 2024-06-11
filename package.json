@@ -4,8 +4,12 @@
   "description": "A React wrapper for the Pagar.me Checkout tool.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucaspalves/pagarme-checkout-react.git"
+  },
   "files": [
-    "dist"
+    "src/**/*"
   ],
   "scripts": {
     "build": "webpack"
