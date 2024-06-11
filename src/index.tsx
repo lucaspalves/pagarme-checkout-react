@@ -33,11 +33,7 @@ const PagarmeCheckout: React.FC<PagarmeCheckoutProps> = ({
     }
   }, [open]);
 
-  return (
-    <Helmet>
-      <script src="https://assets.pagar.me/checkout/1.1.0/checkout.js"></script>
-    </Helmet>
-  );
+  return <></>;
 };
 
 export default PagarmeCheckout;

@@ -41,8 +41,5 @@
   "peerDependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
-  },
-  "dependencies": {
-    "react-helmet": "^6.1.0"
   }
 }
