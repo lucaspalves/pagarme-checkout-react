@@ -24,7 +24,10 @@ const PagarmeCheckout: React.FC<PagarmeCheckoutProps> = ({
       if (PagarMeCheckout && Object.values(PagarMeCheckout).length) {
         const checkout = new PagarMeCheckout.Checkout({
           encryption_key: encryptionKey,
-          close: (data: any) => close(data),
+          close: (data: any) => {
+            console.log("CLOSED FROM LIB");
+            close(data);
+          },
           error: (data: any) => error(data),
           success: (data: any) => success(data),
         }) as MainCheckout;
