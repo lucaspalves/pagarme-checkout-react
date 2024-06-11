@@ -10,6 +10,9 @@ const PagarmeCheckout: React.FC<PagarmeCheckoutProps> = ({
   open,
   encryptionKey,
   settings,
+  close,
+  error,
+  success,
 }) => {
   const { PagarMeCheckout } = useScript(
     SCRIPT_URL,
@@ -21,6 +24,9 @@ const PagarmeCheckout: React.FC<PagarmeCheckoutProps> = ({
       if (PagarMeCheckout && Object.values(PagarMeCheckout).length) {
         const checkout = new PagarMeCheckout.Checkout({
           encryption_key: encryptionKey,
+          close,
+          error,
+          success,
         }) as MainCheckout;
         checkout.open(convertSettingsPropsToPagarmeFormat(settings));
       }

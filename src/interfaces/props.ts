@@ -45,4 +45,7 @@ export type PagarmeCheckoutProps = {
     reviewInformations?: boolean;
     uiColor?: string;
   };
+  close: (data: any) => void;
+  error: (data: any) => void;
+  success: (data: any) => void;
 };
