@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
 import { SCRIPT_URL } from "./constants/constants";
 import { useScript } from "./hooks/use-script";
 import { MainCheckout } from "./interfaces/pagarme-checkout";
